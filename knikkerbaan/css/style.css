@@ -1,0 +1,174 @@
+.midden {
+ box-sizing: border-box;
+ border: 2px solid purple;
+ width: 800px;
+ height: 550px;
+ margin: 2em auto;
+ position: relative;
+}
+
+img {
+ width: 100%;
+	height: 100%
+}
+
+
+/* Constructie */
+
+.balk1 {
+ background: red;
+ width: 420px;
+ height: 15px;
+ position: absolute;
+ top: 130px;
+ left: 80px;
+ transform: rotate(10deg);
+}
+
+.balk2 {
+ background: red;
+ width: 400px;
+ height: 15px;
+ position: absolute;
+ top: 250px;
+ right: 30px;
+ transform: rotate(-15deg);
+}
+
+.balk3 {
+ background: red;
+ width: 420px;
+ height: 15px;
+ position: absolute;
+ top: 365px;
+ left: 120px;
+ transform: rotate(10deg);
+}
+
+.balk4 {
+ background: red;
+ width: 670px;
+ height: 15px;
+ position: absolute;
+ top: 496px;
+ left: 90px;
+ transform: rotate(-6deg);
+}
+
+.liftVerticaal1 {
+ background: gray;
+ width: 15px;
+ height: 546px;
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.liftVerticaal2 {
+ background: gray;
+ width: 15px;
+ height: 546px;
+ position: absolute;
+ top: 0;
+ left: 80px;
+}
+
+.liftBoven,
+.liftBeneden {
+ background: lightgray;
+ border-top: 15px solid darkgrey;
+ border-bottom: 15px solid darkgrey;
+ width: 95px;
+ height: 80px;
+ position: absolute;
+}
+
+.liftBoven {
+ top: 0;
+ left: 0;
+}
+
+.liftBeneden {
+ bottom: 0;
+ left: 0;
+}
+
+.knikker {
+ width: 50px;
+ height: 50px;
+ border-radius: 100%;
+ position: absolute;
+ top: 45px;
+ left: 2px;
+ z-index: -10;
+ animation: knikkerbaan 7s linear infinite;
+}
+
+
+/* Animatie */
+
+@keyframes knikkerbaan {
+ 0% {
+  top: 45px;
+  left: 2px;
+  opacity: 0;
+ }
+ 10% {
+  top: 45px;
+  left: 72px;
+  opacity: 1;
+ }
+ 17% {
+  top: 116px;
+  left: 475px;
+ }
+ 20% {
+  top: 191px;
+  left: 570px;
+  transform: rotate(360deg);
+ }
+ 24% {
+  top: 187px;
+  left: 585px;
+ }
+ 30% {
+  top: 251px;
+  left: 345px;
+  transform: rotate(-180deg);
+ }
+ 32% {
+  top: 303px;
+  left: 240px;
+ }
+ 40% {
+  top: 296px;
+  left: 200px;
+  transform: rotate(180deg);
+ }
+ 50% {
+  top: 353px;
+  left: 520px;
+ }
+ 52% {
+  top: 422px;
+  left: 625px;
+  transform: rotate(-380deg);
+ }
+ 64% {
+  top: 411px;
+  left: 728px;
+  transform: rotate(380deg);
+ }
+ 90% {
+  top: 480px;
+  left: 70px;
+  opacity: 1;
+  transform: rotate(-380deg);
+ }
+ 100% {
+  top: 481px;
+  left: 0;
+  opacity: 0;
+  transform: rotate(-380deg);
+ }
+}
